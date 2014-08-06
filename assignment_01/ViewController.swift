@@ -10,6 +10,33 @@ import UIKit
 
 class ViewController: UIViewController {
                             
+    @IBOutlet weak var myButton: UIButton!
+    @IBOutlet weak var mySwitch: UISwitch!
+    @IBOutlet weak var mySlider: UISlider!
+    
+    @IBAction func buttonPressed(sender: AnyObject) {
+        
+        println("Button Pressed")
+    }
+    
+    @IBAction func switchChanged(sender: AnyObject) {
+        
+        if mySwitch.on{
+            println("Switch is on")
+        }
+        else{
+            println("Switch is off")
+        }
+    }
+    
+    @IBAction func sliderChanged(sender: AnyObject) {
+        
+        if mySlider.value > 0.5{
+            println("Slider Value is \(mySlider.value)")
+        }
+    }
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
