@@ -13,6 +13,7 @@ class ViewController: UIViewController {
     @IBOutlet weak var myButton: UIButton!
     @IBOutlet weak var mySwitch: UISwitch!
     @IBOutlet weak var mySlider: UISlider!
+    @IBOutlet weak var segueToOtherViewController: UIButton!
     
     @IBAction func buttonPressed(sender: AnyObject) {
         
